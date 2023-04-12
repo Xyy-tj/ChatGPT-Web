@@ -27,7 +27,7 @@ onMounted(() => {
       <dialog class="dialog">
         <div class="dialog-header">
             这是标题
-            <div class="close-btn" onclick="() => {document.getElementsByClassName('dialog')[0].close();} )"></div>
+            <div class="close-btn" @click="() => {document.getElementsByClassName('dialog')[0].close();}"></div>
         </div>
         <div class="dialog-content">
             这里是内容
