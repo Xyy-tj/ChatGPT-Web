@@ -10,7 +10,7 @@ const { theme, themeOverrides } = useTheme()
 const { language } = useLanguage()
 
 onMounted(() => {
-  window.alert('asdasd')
+  document.getElementsByClassName('dialog')[0].showModal();
 })
 
 </script>
@@ -24,11 +24,14 @@ onMounted(() => {
     :locale="language"
   >
     <NaiveProvider>
-      <dialog open>
-        <p>Greetings, one and all!</p>
-        <form method="dialog">
-          <button>OK</button>
-        </form>
+      <dialog class="dialog">
+        <div class="dialog-header">
+            这是标题
+            <div class="close-btn" onclick="() => {document.getElementsByClassName('dialog')[0].close();} )"></div>
+        </div>
+        <div class="dialog-content">
+            这里是内容
+        </div>
       </dialog>
       <RouterView />
     </NaiveProvider>
