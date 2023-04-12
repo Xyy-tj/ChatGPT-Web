@@ -6,7 +6,18 @@ import { useLanguage } from '@/hooks/useLanguage'
 
 const { theme, themeOverrides } = useTheme()
 const { language } = useLanguage()
+
 </script>
+
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.alert('asdasd')
+})
+</script>
+
 
 <template>
   <NConfigProvider
