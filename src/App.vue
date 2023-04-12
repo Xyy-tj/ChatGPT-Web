@@ -10,7 +10,7 @@ const { language } = useLanguage()
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  document.getElementsByClassName('dialog')[0].showModal();
+  window.alert('请及时重置CatGPT对话窗口清理历史信息（输入框左侧垃圾箱小图标），以减小对话token消耗，CatGPT表示感谢！')
 })
 
 </script>
@@ -24,15 +24,6 @@ onMounted(() => {
     :locale="language"
   >
     <NaiveProvider>
-      <dialog class="dialog">
-        <div class="dialog-header">
-            这是标题
-            <div class="close-btn" @click="() => {document.getElementsByClassName('dialog')[0].close();}"></div>
-        </div>
-        <div class="dialog-content">
-            这里是内容
-        </div>
-      </dialog>
       <RouterView />
     </NaiveProvider>
   </NConfigProvider>
