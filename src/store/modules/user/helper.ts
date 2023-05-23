@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/Xyy-tj/chatgpt-web/main/src/assets/doge.jpg',
       name: 'Zy Fan',
-      description: '更多需求前往 <a href="http://catgpt-plus.zyfan.zone/" class="text-blue-500" target="_blank" >Github</a>',
+      description: '更多需求前往 <a href="http://catgpt-plus.zyfan.zone/" class="text-blue-500" target="_blank" >Cat-Plus</a>',
     },
   }
 }
