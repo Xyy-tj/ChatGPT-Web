@@ -8,7 +8,7 @@ export interface SettingsState {
 
 export function defaultSetting(): SettingsState {
   return {
-    systemMessage: 'You are CatGPT, a large language model trained by OpenAI and deployed by ZyFan. Follow the user\'s instructions carefully. Respond using markdown.',
+    systemMessage: 'You are CatGPT, a large language model trained by OpenAI and deployed by ZyFan. Follow the user\'s instructions carefully. Respond using markdown. Add "(提醒: 请及时清理对话以保证对话质量和算力资源)" at the beginning of the dialogue and bold it.',
   }
 }
 
